@@ -83,7 +83,7 @@ main div {
 
 .image-effect {
     width: 100%; /* Hacer que la imagen sea responsive */
-    max-width: 300px; /* Ancho máximo de la imagen */
+    max-width: 400px; /* Ancho máximo de la imagen */
     transition: transform 0.3s ease; /* Transición suave */
 }
 
