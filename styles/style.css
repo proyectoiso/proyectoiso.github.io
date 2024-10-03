@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BhuTuka+Expanded+One&family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=BhuTuka+Expanded+One&family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     font-family: "Inter Tight", sans-serif;
@@ -57,10 +57,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2C3E50; /* Cambia el color del texto al pasar el cursor */
-    transform: scale(1.1); /* Aumenta el tamaño del texto */
+    color: #2C3E50; 
+    transform: scale(1.1); 
 }
-
 
 main {
     background-color: #FFFFFF;
@@ -69,22 +68,34 @@ main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar el contenido */
+    align-items: center; 
 }
 
 main div {
-    max-width: 800px; /* Limitar el ancho del contenido */
-    padding: 20px; /* Espaciado interno */
+    max-width: 800px; 
+    padding: 20px; 
 }
 
 .image-container {
-    text-align: center; /* Centrar la imagen */
+    text-align: center; 
+}
+
+.image-container-systemback {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.image-container-systemback img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
 }
 
 .image-effect {
-    width: 100%; /* Hacer que la imagen sea responsive */
-    max-width: 400px; /* Ancho máximo de la imagen */
-    transition: transform 0.3s ease; /* Transición suave */
+    width: 100%; 
+    max-width: 400px; 
+    transition: transform 0.3s ease; 
 }
 
 .image-effect:hover {
@@ -92,7 +103,71 @@ main div {
 }
 
 p {
-    line-height: 1.6; /* Aumentar el espacio entre líneas */
+    line-height: 1.6; 
+}
+
+/* --- Media Queries para la responsividad --- */
+
+/* para dispositivos medianos (tablets, pantallas medianas) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #logo-prueba {
+        width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main div {
+        max-width: 90%;
+    }
+
+    .image-container-systemback img {
+        max-width: 100%; /* esta parte asegura que la imagen no exceda el ancho del contenedor */
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    #logo-prueba {
+        width: 100px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    main div {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .image-effect {
+        max-width: 90%; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+    }
 }
 
 

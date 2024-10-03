@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BhuTuka+Expanded+One&family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=BhuTuka+Expanded+One&family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     font-family: "Inter Tight", sans-serif;
@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2C3E50; /* Cambia el color al pasar el cursor */
+    color: #2C3E50; /* cambia el color al pasar el cursor */
 }
 
 main {
@@ -65,30 +65,30 @@ main {
     padding-top: 80px; /* Ajustar según la altura del header */
     flex-grow: 1;
     display: flex;
-    justify-content: center; /* Centrar el contenido */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .content-container {
-    max-width: 800px; /* Limitar el ancho del contenido */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar el texto */
+    max-width: 800px; 
+    padding: 20px; 
+    text-align: center; 
 }
 
 .download-link a {
-    display: inline-block; /* Hacer que el enlace sea un bloque */
-    background-color: #16A085; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    font-weight: bold; /* Negrita */
-    text-decoration: none; /* Sin subrayado */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    display: inline-block; 
+    background-color: #16A085; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-weight: bold; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .download-link a:hover {
-    background-color: #2C3E50; /* Color de fondo al pasar el cursor */
-    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    background-color: #2C3E50; 
+    transform: scale(1.05); 
 }
 
 .image-container {
@@ -97,10 +97,75 @@ main {
 
 .main-image {
     width: 100%; /* Hacer que la imagen sea responsive */
-    max-width: 400px; /* Ancho máximo de la imagen */
-    transition: transform 0.3s ease; /* Transición suave */
+    max-width: 400px; 
+    transition: transform 0.3s ease; 
 }
 
 .main-image:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* --- Media Queries para la responsividad --- */
+
+/* para dispositivos medianos (tablets, pantallas medianas) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #logo-prueba {
+        width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    .content-container {
+        max-width: 90%;
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    #logo-prueba {
+        width: 100px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    .content-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .download-link a {
+        padding: 8px 15px;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
 }
