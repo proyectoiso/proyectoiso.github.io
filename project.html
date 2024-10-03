@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16"  href="./assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Proyecto y Programas</title>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="./index.html">
+                <img id="logo-prueba" src="./assets/img/logo.png" alt="Logo del Proyecto">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./project.html">Proyecto distro</a></li>
+                <li><a href="./download.html">Descargar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Proyecto y programas utilizados <i class="fa-solid fa-screwdriver-wrench"></i></h1> 
+            <p>Para llevar adelante la creación de una distro/respin de un Sistema Operativo Linux, primero estudiamos un poco de la arquitectura de linux y cómo está compuesta. Luego se identifico qué objetivo se iba a cubrir con esta distribución y luego se investigó los programas que fueran compatibles con el sistema operativo actual para generar una imagen ISO del mismo. Todo esto en el marco de la cátedra de Sistemas Operativos impartida por el profesor Javier Ruiz Diaz en la <a href="https://www.ucp.edu.ar/" target="_blank">Universidad de la Cuenca del Plata</a> dentro del segundo año de la carrera de Sistemas de Información.</p><br>
+            <p>Aquí una lista de los posibles programas para generar una imagen ISO:</p><br>
+
+            <ul>
+                <li>
+                    <h4>Systemback</h4>
+                    <p>Es una herramienta de restauración del sistema para distribuciones de Linux. Permite crear puntos de restauración y copias de seguridad de todo el sistema operativo, restaurar a estados anteriores y crear un archivo ISO del sistema operativo actual para su reinstalación o distribución. En particular, esta fue la herramienta que me sirvió a mí.</p>
+                </li>
+                <li>
+                    <h4>ISO-Snapshot</h4>
+                    Permite generar una imagen ISO del sistema operativo actual de una distribución Linux, similar a cómo era en el momento en que se creó el snapshot. Esta imagen ISO puede ser usada para crear una instalación personalizada del sistema operativo o para realizar respaldos completos.
+                </li>
+                <li>
+                    <h4>Remastersys</h4>
+                    Era una herramienta popular en Linux que permitía a los usuarios crear una copia de su sistema operativo en un archivo ISO. Podías usar este ISO para reinstalar el sistema en otra máquina o distribuir tu configuración personalizada. Aunque el proyecto original ya no está activo, sigue siendo una referencia importante para aquellos que quieren crear distribuciones personalizadas de Linux.
+                </li>
+            </ul><br>
+            
+            <h3>Modo de uso de Systemback</h3>
+
+            <p>Después de instalarlo, inicie la aplicación Systemback desde el Tablero o el Menú.<br>
+            La interfaz principal predeterminada de Systemback se verá como se muestra en la siguiente imagen. Debe presionar donde dice <strong>Crear Sistema Live</strong>.</p>
+            <div class="image-container-systemback">
+                <img src="./assets/img/systemback_01.png" alt="Entorno gráfico de Systemback">
+            </div>
+            
+            <p>Como siguiente paso podremos especificar el nombre deseado (opcional) para la imagen, también se nos brinda la posibilidad de marcar la casilla para incluir las configuraciones de usuario; luego presionamos en <strong>Crear Nuevo</strong>.</p>
+
+            <div class="image-container-systemback">
+                <img src="./assets/img/systemback_02.png" alt="Entorno gráfico de Systemback">
+            </div>
+
+            <p>Ahora simplemente resta esperar a que el proceso termine.</p>
+
+            <div class="image-container-systemback">
+                <img src="./assets/img/systemback_03.png" alt="Entorno gráfico de Systemback">
+            </div>
+            
+            <p>Una vez finalizado el proceso, la aplicación nos devuelve una pantalla donde podemos apreciar un comprimido y su peso en Gb , lo que nos permitirá evaluar, si es apta para ser convertida en formato ISO instalable o solo podremos grabarla en una usb para su uso en vivo. Como siguiente paso presionamos en <strong>Convertir a ISO</strong>.</p>
+
+            <div class="image-container-systemback">
+                <img src="./assets/img/systemback_04.png" alt="Entorno gráfico de Systemback">
+            </div>
+
+            <p>Luego de terminar las operaciones, obtendremos la imagen ISO que se ubicara en <strong>/home</strong> desde donde podremos disponer de ella.</p>
+        </div>
+    </main>
+</body>
+</html>
