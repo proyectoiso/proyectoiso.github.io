@@ -72,7 +72,7 @@ main {
     padding-top: 80px; /* Ajustar según la altura del header */
     flex-grow: 1;
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
     align-items: center; 
 }
 
