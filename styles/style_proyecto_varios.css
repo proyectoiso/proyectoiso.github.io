@@ -1,0 +1,44 @@
+/* Estilos generales para la página de proyectos */
+.project-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Línea decorativa */
+.decorative-line {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    margin: 20px 0;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambia el layout de los proyectos */
+    .project-content {
+        flex-direction: column; /* Apila la descripción y la imagen */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .project-description {
+        margin-bottom: 15px; /* Añade espacio debajo de la descripción */
+    }
+
+    .project-image img {
+        width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
+        max-width: 250px; /* Limita el tamaño máximo de la imagen */
+        margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+    }
+}
