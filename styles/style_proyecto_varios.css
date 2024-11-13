@@ -1,44 +1,45 @@
-/* Estilos generales para la página de proyectos */
-.project-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* Establece box-sizing en todo el documento */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.project-description {
-    flex: 1;
+/* Quita margen y padding de body y html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.project-image img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
+.project-item h2 {
+    text-align: center;
 }
 
-/* Línea decorativa */
-.decorative-line {
-    border: 0;
-    height: 2px;
-    background: linear-gradient(to right, #3498db, #8e44ad);
-    margin: 20px 0;
-}
 
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 768px) {
-    /* Cambia el layout de los proyectos */
     .project-content {
-        flex-direction: column; /* Apila la descripción y la imagen */
-        align-items: center; /* Centra los elementos */
-        text-align: center; /* Centra el texto */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .project-description {
-        margin-bottom: 15px; /* Añade espacio debajo de la descripción */
+        margin-bottom: 15px;
     }
 
     .project-image img {
-        width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
-        max-width: 250px; /* Limita el tamaño máximo de la imagen */
-        margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .project-item {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
     }
 }
+
