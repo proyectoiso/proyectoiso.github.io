@@ -67,6 +67,10 @@ nav ul li a {
     transition: color 0.3s, transform 0.3s; /* Transiciones suaves para el texto */
 }
 
+nav ul li a i {
+    margin-right: 5px;
+}
+
 nav ul li a:hover {
     color: #2C3E50; 
     transform: scale(1.1); 
@@ -116,6 +120,31 @@ main div {
 p {
     line-height: 1.6; 
 }
+
+/* -- Estilos para la página Proyectos -- */
+.project-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-image img {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+
+.decorative-line {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    margin: 20px 0;
+}
+
 
 /* --- Media Queries para la responsividad --- */
 
