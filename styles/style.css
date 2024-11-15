@@ -133,9 +133,9 @@ p {
 }
 
 .project-image img {
-    width: 150px; /* Ajusta el tamaño según necesites */
+    width: 180px; /* Ajusta el tamaño según necesites */
     height: auto;
-    border-radius: 8px; /* Opcional: para bordes redondeados */
+    border-radius: 4px; /* Opcional: para bordes redondeados */
 }
 
 .decorative-line {

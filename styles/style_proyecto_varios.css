@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Barra para los grupos */
+.group-info {
+    background-color: #f3f4f6; 
+    border-left: 4px solid #3498db; 
+    padding: 10px;
+    border-radius: 5px; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+
 /* Quita margen y padding de body y html */
 html, body {
     margin: 0;
