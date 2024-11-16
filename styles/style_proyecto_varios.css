@@ -17,6 +17,7 @@
 }
 
 .project-description a {
+    display: inline;
     text-decoration: none;
     font-weight: bold;
 }
