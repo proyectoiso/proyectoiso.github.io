@@ -16,6 +16,10 @@
     color: #333; 
 }
 
+.project-description a {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* Quita margen y padding de body y html */
 html, body {
